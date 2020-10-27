@@ -1,0 +1,206 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Oct-2020, 5:02:17 PM
+    Author     : ksh09
+*/
+
+
+.svgs{
+    padding-top: 100px;
+    width: 250px;
+    height:300px;    
+}
+
+.banner{
+    background: rgb(128, 106, 247);
+    background: linear-gradient(335deg, rgba(128, 106, 247, 1) 31%, rgba(207, 139, 241, 1) 100%);
+    margin: 55px 0px 50px 0;
+    height: 480px;
+    position: relative;
+    overflow: hidden; 
+}
+.banner:after {
+         content: '';
+         background: url(images/study.png) no-repeat;
+         background-size: 580px 500px;
+         width: 530px;
+         height: 500px;
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+.bannerin {
+        color: #ffffff;
+        margin-top: 50px;
+}
+.bannerin h2 {
+        font-weight: 700;
+        font-size: 38px;
+}
+.bannerin p {
+         font-size: 19px;
+         padding: 50px 0px 40px;
+     }
+.bannerin p span {
+         font-size: 22px;
+         font-weight: 700;
+     }
+
+.bannerin a {
+        background-color: #ffffff;
+        width: 180px;
+        height: 45px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 50px;
+        display: inline-block;
+        color: #6f42c1;
+        text-decoration: none;
+    }
+
+.rowset {
+	margin: 40px 0px !important;
+}
+
+.imgset {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
+
+.rowset p {
+	padding: 10px;
+	color: #6c7f7d;
+}
+
+.rowset h2 {
+	margin: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.linksfoot ul,a,p{
+    list-style-type :none;
+    color:#ffffff;
+}
+               
+.linksfoot {
+  padding: 1rem;
+  background: #6f42c1;
+  align-items: center;
+  justify-content: space-between;
+  
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: white;
+
+      &:hover {
+        color: red;
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+.footer-bottom {
+    display:flex-block;
+    justify-content: space-around;
+    border: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #d2d2d2;
+    padding: 7px 0;
+}
+.footer-bottom p{
+    margin-left: 15px;
+}
+.a{
+    width:140px;
+    height:75px;
+}
+.footer-right{
+    padding-left: 80px;
+    }
+.title{ 
+    margin-bottom: 4px; 
+    text-align:center; 
+    width: 244px; 
+    color:yellow; 
+    border: solid black 2px; 
+      } 
+  
+input[type="button"] 
+{ 
+   background-color:green; 
+   color: black; 
+   border: solid black 2px; 
+   width:100% 
+} 
+  
+input[type="text"] 
+{ 
+    background-color:white; 
+    border: solid black 2px; 
+    width:100% 
+} 
+
+label {
+  color: blueviolet;
+}
+.top{
+    background-color: rgba(173,127,246,0.7);
+    display:flex;
+    padding:7px 0 10px 5px;
+}
+.subject{
+        background-color: #ffffff;
+        width: 100px;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 40px;
+        display: inline-block;
+        color: #6f42c1;
+        text-decoration: none;
+}
+form.ask button {
+  float: left;
+  width: 14%;
+  padding: 1px;
+  background: #6f42c1;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+#myFile{
+    background: #6f42c1;
+    color: white;
+}
+.box {
+  background-color: transparent;
+  width: 450px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  padding-bottom:10px; 
+  background-color: rgb(255,0,64);
+  text-align: center;
+}
+.quest{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doubt Ez</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="doubt.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+            <a class="navbar-brand text-warning font-weight-bold" href="index.html">
+                <span>DOUBT EZ</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                         aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                            Explore</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Maths</a>
+                                <a class="dropdown-item" href="#">Physics</a>
+                                <a class="dropdown-item" href="#">Chemistry</a>
+                                <a class="dropdown-item" href="#">Aptitude</a>
+                    </li>      
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                         role="button" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <i class="fa fa-line-chart"></i>
+                        Quizzes
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mock Test</a>
+                         <a class="dropdown-item" href="#">Time Test</a>
+                        <a class="dropdown-item" href="#">Speed Test</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                             aria-expanded="false">
+                        <i class="fa fa-users"></i>
+                        Login </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Student</a>
+                        <a class="dropdown-item" href="#">Mentor</a>
+                    </li>
+                </ul>
+            </div>
+                </div>
+        </nav>
+    <section class="banner">    
+    <div class="container">
+      <div class="row">
+        <div class="col-7 col-sm-8 col-md-5">
+          <div class="bannerin">
+            <h2>#AbHarGharShiksha</h2>
+            <p>
+                A Free platform for the future of India.<br>
+              Learn,Engage and Score the best.....<br> 
+              <span>Success is destiny</span>
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  <!-- Download our App to get benefits! start -->
+    <div class="container">
+        <div class="row rowset">
+      <div id="doubt" class="row">
+        <div class="col-sm-12 benefitsHeading textColorBlack">
+          <h2>India's Best Doubt Solving Platform</h2>
+        </div>
+        <div class="col order-3 order-sm-3 order-md-3 order-lg-0">
+          <div class="getBenefits lightBlueGradientBg textColorBlack">
+            <div class="benefitsImgs">
+                <img src="images/bulb.svg" class="svgs">
+            </div>
+            <h3 class="benefit hide-xs-above">Faster Solution</h3>
+            <p>Experts available 24X7 for clearing your doubts</p>
+          </div>
+        </div>
+        <div class="col order-2 order-sm-2 order-md-2 order-lg-0">
+          <div class="getBenefits lightBlueGradientBg textColorBlack">
+
+                <img src="images/chat.png" class="svgs">
+            <h3 class="benefit hide-xs-above">Chat Section</h3>
+            <p>Discuss your doubts with other students</p>
+          </div>
+        </div>
+        <div class="col order-1 order-sm-1 order-md-1 order-lg-0">
+          <div class="getBenefits lightBlueGradientBg textColorBlack">
+            <div class="benefitsImgs liveClassImg">
+                <img src="images/sticker.png" class="svgs">
+            </div>
+            <h3 class="benefit ">70% Discount</h3>
+            <p>Exclusive Discount for Regular Students</p>
+          </div>
+        </div>
+         <div class="col order-0 order-sm-0 order-md-0 order-lg-0">
+          <div class="getBenefits lightBlueGradientBg textColorBlack">
+            <div class="benefitsImgs liveClassImg">
+                <img src="headphone.png" class="svgs">
+            </div>
+            <h3 class="benefit hide-xs-above">Win Prizes</h3>
+            <p>Special gifts for top students who contribute in discussion</p>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>>
+  <div class= "section">
+      <div class="container">
+      <h2 style="align-content: center;">Top Discussions</h2>
+      <img src="images/ques.png" class="quest">
+      <input type="text" class="col-sm-7" placeholder="Ask your doubt or upload it">
+      <button type="submit"><i class="fa fa-search"></i></button>
+      
+
+        <label class="file">
+          <input type="file" id="file" aria-label="File browser example">
+          <span class="file-custom"></span>
+        </label>
+      </div>
+      
+      <div class="row section top">
+       <div class="posts col-sm-4">
+    <div class="head-container">
+        <div class="box">
+        <h2 class="dark weight-700 regular caps head">Physics Trending....</h2>
+    <div class="section-desc regular dark"><p><strong>700+ solved question this week</strong></p>
+    <p><u><strong>Topics which are most popular this week:</strong></u></p>
+
+<ul>
+	<li>Electromagnetism: <strong>900+ posts</strong></li>
+	<li>Gravitation: <strong>700+ posts</strong></li>
+        <li>Thermodynamics: <strong>400+ posts</strong></li>
+        <li>Rotation: <strong>200+ posts</strong></li>
+        <li>Modern Physics: <strong>100+ posts</strong></li>
+
+</ul>
+    <a class="subject" href="#">Visit</a>
+    </div>
+    </div>
+    </div>
+       </div>
+    <div class="col-sm-4">
+        <div class="box">
+    <div class="head-container">
+        <h2 class="dark weight-700 regular caps head">Maths Trending....</h2>
+    <div class="section-desc regular dark"><p><strong>1000+ solved question this week</strong></p>
+    <p><u><strong>Topics which are most popular this week:</strong></u></p>
+
+<ul>
+	<li>Calculus: <strong>300+ posts</strong></li>
+	<li>Vectors and 3-D: <strong>180+ posts</strong></li>
+        <li>Complex No: <strong>100+ posts</strong></li>
+        <li>Permutations and Combinations: <strong>80+ posts</strong></li>
+        <li>Binomial Theorem: <strong>40+ posts</strong></li>
+
+</ul>
+    <a  class="subject" href="#">Visit</a>
+</div>
+    </div>
+    </div>
+  </div>
+          <div class="col-sm-4">
+    <div class="head-container">
+          <div class="box">       
+        <h2 class="dark weight-700 regular caps head">Chemistry Trending....</h2>
+    <div class="section-desc regular dark"><p><strong>800+ solved question this week</strong></p>
+    <p><u><strong>Topics which are most popular this week:</strong></u></p>
+
+<ul>
+	<li>Electrochemistry: <strong>500+ posts</strong></li>
+	<li>Chemical Bonding: <strong>200+ posts</strong></li>
+        <li>Thermodynamics: <strong>150+ posts</strong></li>
+        <li>Atomic Structure: <strong>60+ posts</strong></li>
+        <li>Organic Compounds: <strong>30+ posts</strong></li>
+</ul>
+    <a class="subject" href="#">Visit</a>
+    </div>
+        </div>
+          </div>
+    </div>
+  </div>
+       </div>
+          
+   <footer>
+        <div class="linksfoot">
+         <div class="row">
+  <div class="social-footer-icons">
+    <ul class="menu simple">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+    <div class="col 8 s12">
+      <h5 class="white-text text-warning">DOUBT EZ</h5>
+      <p>We provide the best learning and doubt clearing facility</p><hr>
+      Join the network of experts and be one step ahead
+
+    </div>
+      <div class="col 8 s12">
+      <h5 class="white-text">Level</h5>
+      <ul>
+          <li><a class="grey-text text-lighten-3" href="#">Class 6</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Class 7</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Class 8</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Class 9</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">Class 10</a></li>
+      </ul>
+    </div>
+    <div class="col 8 s12">
+     <h5 class="white-text">Exams</h5>
+      <ul>
+          <li><a class="grey-text text-lighten-3" href="#">JEE-MAIN</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">JEE-ADVANCE</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">IMU-CET</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">BITSAT</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">WBJEE</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">NEET</a></li>
+          <li><a class="grey-text text-lighten-3" href="#">AIIMS</a></li>
+      </ul>
+    </div>
+    <div class="col 8 offset-l2 s12">
+      <h5 class="white-text">Links</h5>
+      <ul>
+        <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Online Study</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Crash Course</a></li>
+      </ul>
+    </div>
+    <div class="col 8 offset-l2 s12">
+      <h5 class="white-text">Resources</h5>
+      <ul>
+        <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Blogs</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Success Motivation</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Rank Calculator</a></li>
+      </ul>
+    </div>
+  </div>
+        <div class="row">
+        <div class="col-sm-8 sm footer-bottom">
+            <a href="#" target="_blank">
+                <img src="images/play.png" class="a">
+            </a> 
+        <p>
+            Designed and developed by Kshitij © 2020 Copyright</p>
+    </div>
+            <div class="col-sm-4 sm footer-right">
+                <div class = title >EZ Calculator</div> 
+      <table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table> 
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
